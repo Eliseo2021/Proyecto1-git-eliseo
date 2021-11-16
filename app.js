@@ -15,7 +15,6 @@ function getCountryByIso3(isoCode){
  * @returns {string}
  */
 function getCountryTranslatedName(isoCode, language){
-    //Complete with your code
     const country = countries.find(name => name.iso3 === isoCode)
     for(const key in country.translations){
        if( key ===language){
